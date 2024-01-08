@@ -1,0 +1,84 @@
+<html>
+
+<body>
+  <h2>الاعداد الزجية بين قيمتين</h2>
+
+  <button type="button" onclick="FuncByFor()">FOR الاعداد الزوجية</button>
+  <button type="button" onclick="FuncByWhile()">WHILE الاعداد الزوجية</button>
+  <button type="button" onclick="FuncByDoWhile()">DO WHILE الاعداد الزوجية</button>
+
+  <script>
+
+    function FuncByFor() {
+      var counter = 0;
+
+      var first = window.prompt("الاعداد من : ", 1);
+      var last = window.prompt("الاعداد الي : ", 10);
+
+      for (var i = first; i <= last; i++) {
+        if (i % 2 == 0) {
+          document.write(i + "\t");
+          counter = counter + 1;
+        }
+      }
+      alert(counter + " = عدد الاعداد الزوجية ");
+    }
+
+    // ===========================================================
+
+    function FuncByWhile() {
+      let counter = 0;
+
+      var first = window.prompt("الأعداد من:", 1);
+      var last = window.prompt("الأعداد إلى:", 10);
+
+      if (isNaN(first) || isNaN(last)) {
+        alert("القيم المدخلة غير صالحة.");
+        return;
+      }
+      
+      var i = first ;
+
+      while (i <= last) {
+        if (i % 2 == 0) {
+          document.write(i + "\t");
+          counter++;
+        }
+        i++;
+      }
+
+      alert(counter + " = عدد الأعداد الزوجية");
+    }
+
+    // ===========================================================
+
+    function FuncByDoWhile() {
+
+      let counter = 0;
+
+      let first = window.prompt("الأعداد من:", 1);
+      let last = window.prompt("الأعداد إلى:", 10);
+
+      if (isNaN(first) || isNaN(last)) {
+        alert("القيم المدخلة غير صالحة.");
+        return;
+      }
+
+      var i = first ;
+
+      do {
+
+        if (i % 2 == 0) {
+          document.write(i + "\t");
+          counter++;
+        }
+        i++;
+      }
+      while(i <= last);
+      alert(counter + " = عدد الأعداد الزوجية");
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+
+<body>
+  <h2>ضرب عددين</h2>
+
+  <button type="button" onclick="MyFunction()">اسألني</button>
+
+  <button type="button" onclick="MyFunctionPara(first, last)">طباعة ناتج العملية السابقة</button>
+
+  <script>
+
+    function MyFunction() {
+
+      var first = window.prompt(" العدد الأول ", 0);
+      var last = window.prompt(" العدد الثاني ", 0);
+
+      var Result = first * last
+
+      alert(Result + " الناتج : ");
+
+      document.write(Result + ": الناتج  ");
+
+    }
+
+    var first = window.prompt(" العدد الأول ", 0);
+    var last = window.prompt(" العدد الثاني ", 0);
+
+    function MyFunctionPara(first, last) {
+
+      var Result = first * last
+
+      alert(Result + " الناتج : ");
+
+    }
+  </script>
+</body>
+
+</html>
