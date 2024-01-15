@@ -1,0 +1,33 @@
+<html>
+
+<body>
+    <center>
+
+        <h2> تسجيل الذخول </h2>
+
+        <button type="button" onclick="MyFunction()">تسجيل ذخول</button>
+
+    </center>
+
+    <script>
+
+        function MyFunction() {
+
+            var My_Username = "أمين";
+            var My_Password = "123";
+
+            var UserName = window.prompt("اسم المستخدم");
+            var Password = window.prompt("كلمة المرور ");
+
+            if (UserName == My_Username || Password == My_Password) {
+                alert("  مرحبا يا " + UserName);
+                document.write(UserName + "  مرحبا يا ");
+            } else
+                alert("كلمة مرور أو اسم المستخدم خاطئ");
+            document.write("أعد المحاولة - اعد تحميل الصفحة");
+        }
+
+    </script>
+</body>
+
+</html>
