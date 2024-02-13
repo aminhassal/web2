@@ -1,0 +1,29 @@
+<html>
+
+<body>
+    <center>
+
+        <h2>Test</h2>
+
+    </center>
+
+    <button type="button"  onclick=DisplayMessage()> Excute </button>
+
+    <script>
+
+        function DisplayMessage() {
+            var fty = new Array(4);
+            for (var i = 0; i < 4; i++) {
+                fty[i] = prompt("ادخل الاسماء");
+            }
+
+            for (var i = 0; i < 4; i++) {
+                document.write(fty[i]);
+                document.write("<br>");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
