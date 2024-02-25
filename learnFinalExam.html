@@ -27,9 +27,10 @@
         l = prompt();
         // --------------------------------------------------------
         try{
-            Employe.SetName(l);
+            Employe.SetNames(l);
             alert(Employe.getName());
         }catch(e){
+            throw "Error";
             alert("Error name : " + e.name + "\n" 
             +"Error number : " + e.number + "\n" 
             +"Error message : " + e.message + "\n");a
