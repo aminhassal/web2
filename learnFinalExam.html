@@ -3,12 +3,41 @@
     <title>- اختبار -</title>
 </header>
 
-<body>
+<body align = "center">
     <h2>- اختبار -</h2>
 
     <button type="button" onclick="FuncByFor()">تنفيذ</button>
 
-    <script></script>
+    <br>
+    <br>
+    <br>
+
+    <script>
+        var Employe = new Object();
+        Employe.name = "aminhassal";
+        Employe.age= 18;
+        Employe.adress = "Zawia";
+        Employe.getName = function(){
+            return Employe.name;
+        };
+        Employe = function(x){
+            // prompt("اذخل الاسم");
+            this.name =x;
+        }
+        l = prompt();
+        // --------------------------------------------------------
+        try{
+            Employe.SetNames(l);
+            alert(Employe.getName());
+        }catch(e){
+            alert("Error name : " + e.name + "\n" 
+            +"Error number : " + e.number + "\n" 
+            +"Error message : " + e.message + "\n");a
+        }
+
+
+
+    </script>
 </body>
 
 </html>
